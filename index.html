@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Seção de capa -->
+    <section class="secao-capa">
+        <div class="overlay"></div>
+        <img class="imagem-ilustracao" src="imagem.jpg" alt="Imagem ilustrativa">
+        <button class="botao-inscrevase">Inscreva-se</button>
+    </section>
+
+    <!-- Container do formulário -->
+    <div class="conteiner-formulario">
+        
+        <!-- Imagens ilustrativas -->
+        <div class="imagem-estudo">
+            <img src="imagem1.jpg" alt="Estudo 1">
+            <img src="imagem2.jpg" alt="Estudo 2">
+        </div>
+
+        <!-- Formulário de inscrição -->
+        <section class="secao-formulario-inscricao">
+            <h1 class="titulo-formulario">Inscreva-se no Curso</h1>
+            <p class="subtitulo-formulario">Preencha os campos abaixo para se inscrever.</p>
+
+            <form action="#" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" class="campo-texto" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="campo-texto" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" class="campo-texto" name="telefone" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" class="campo-texto" name="endereco" required>
+
+                <label for="curso">Escolha seu curso:</label>
+                <select id="curso" class="seletor" name="curso" required>
+                    <option value="">Selecione...</option>
+                    <option value="frontend">Front-End</option>
+                    <option value="backend">Back-End</option>
+                    <option value="uxdesign">UX Design</option>
+                    <option value="jogos">Desenvolvimento de Jogos</option>
+                </select>
+
+                <label for="mensagem">Mensagem (opcional):</label>
+                <textarea id="mensagem" class="area-texto" name="mensagem"></textarea>
+
+                <button type="submit" class="botao-inscricao">Enviar Inscrição</button>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>
